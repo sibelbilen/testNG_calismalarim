@@ -7,13 +7,13 @@ import java.io.IOException;
 
 public class C01_ExcelTest01 {
     @Test
-    public void test01() throws IOException {
-        String path="src/test/java/Resources/mysmoketestdata.xlsx";
-        String sayfa="customer_info";
-        ExcelUtils excelUtils=new ExcelUtils(path,sayfa);
-        excelUtils.getCellData(1,0);//1.satir 0.hucreyi getir bu excel utilis classidan aliyoruz bu methodla yapiyoruz
-
-
+    public void test01() {
+        ExcelUtils excelUtilss = new ExcelUtils("src/test/java/Resources/mysmoketestdata.xlsx","customer_info");
+        System.out.println(excelUtilss.getCellData(1, 0));
+        String email = excelUtilss.getCellData(1,0);
+        String password = excelUtilss.getCellData(1,1);
+        System.out.println(email+" || "+password);
+        System.out.println(excelUtilss.columnCount());//sutun sayisini verir
 
 
     }
