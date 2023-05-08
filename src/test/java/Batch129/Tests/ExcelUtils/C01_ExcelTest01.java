@@ -1,9 +1,7 @@
 package Batch129.Tests.ExcelUtils;
 
-import Batch129.Utilis.ExcelUtils;
+import Batch129.Utilis.utilies.ExcelUtils;
 import org.testng.annotations.Test;
-
-import java.io.IOException;
 
 public class C01_ExcelTest01 {
     @Test
