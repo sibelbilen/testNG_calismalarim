@@ -41,8 +41,12 @@ public class ExcelUtils {
     //============Exceldeki datalari 2 boyutlu array seklinde alir===
     public String[][] getDataArray() {
         String[][] data = new String[rowCount()-1][columnCount()];
+
         for (int i = 1; i < rowCount(); i++) {
+            //neden 1'den baslar 0'da baslik oldugu icin
+
             for (int j = 0; j < columnCount(); j++) {
+
                 String value = getCellData(i, j);
                 data[i-1][j] = value;
             }
