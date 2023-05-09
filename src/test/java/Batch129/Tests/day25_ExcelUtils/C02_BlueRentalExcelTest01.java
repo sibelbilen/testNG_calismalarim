@@ -1,12 +1,13 @@
 package Batch129.Tests.day25_ExcelUtils;
 
+import Batch129.Pages.pages.BlueRentalPage;
+import Batch129.Utilis.utilies.ConfigReader;
+import Batch129.Utilis.utilies.Driver;
+import Batch129.Utilis.utilies.ExcelUtils;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import techproed.pages.BlueRentalPage;
-import techproed.utilies.ConfigReader;
-import techproed.utilies.Driver;
-import techproed.utilies.ExcelUtils;
+
 
 import java.io.FileNotFoundException;
 
